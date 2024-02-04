@@ -1,0 +1,45 @@
+﻿---
+- name: Install Docker
+  hosts: vagrant_sql
+  become: true
+
+  tasks:
+    - name: Get time
+      command: date +"%Y-%m-%d %H:%M:%S"
+      register: current_time_result
+
+    - name: Install required dependencies
+      yum:
+          - device-mapper-persistent-data
+          - lvm2
+          - unzip
+        state: present
+
+    - name: Debug message
+      debug:
+        msg: "{{ current_time_result.stdout }} Выполнена установка необходимых библиотек"
+
+    - name: Add Docker repository
+      yum_repository:
+        name: docker-ce
+        description: Docker CE Stable - $basearch
+        baseurl: https://download.docker.com/linux/centos/7/$basearch/stable
+        gpgcheck: yes
+        gpgkey: https://download.docker.com/linux/centos/gpg
+        enabled: yes
+      
+    - name: Debug message
+      debug:
+        msg: "{{ current_time_result.stdout }} Докер добавлен в репозиторий"
+
+    
+    - name: Start Docker service
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Debug message
+      debug:
+        msg: "{{ current_time_result.stdout }} Запуск Docker"
+
