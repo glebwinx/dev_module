@@ -1,0 +1,57 @@
+Change Dir: 'C:/Users/User/Desktop/DevOps/build'
+
+Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/MSBuild.exe" ALL_BUILD.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+Microsoft (R) Build Engine версии 16.0.461+g6ff56ef63c для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 03.02.2024 18:31:16.
+Проект "C:\Users\User\Desktop\DevOps\build\ALL_BUILD.vcxproj" в узле 1 (целевые объекты по умолчанию).
+Проект "C:\Users\User\Desktop\DevOps\build\ALL_BUILD.vcxproj" (1) выполняет сборку "C:\Users\User\Desktop\DevOps\build\ZERO_CHECK.vcxproj" (2) в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "x64\Debug\ZERO_CHECK\".
+  Создание каталога "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\".
+InitializeBuildStatus:
+  Создание "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+CustomBuild:
+  1>Checking Build System
+FinalizeBuildStatus:
+  Файл "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+Сборка проекта "C:\Users\User\Desktop\DevOps\build\ZERO_CHECK.vcxproj" завершена (целевые объекты по умолчанию).
+Проект "C:\Users\User\Desktop\DevOps\build\ALL_BUILD.vcxproj" (1) выполняет сборку "C:\Users\User\Desktop\DevOps\build\sqlite3.vcxproj" (3) в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "sqlite3.dir\Debug\".
+  Создание каталога "C:\Users\User\Desktop\DevOps\build\Debug\".
+  Создание каталога "sqlite3.dir\Debug\sqlite3.tlog\".
+InitializeBuildStatus:
+  Создание "sqlite3.dir\Debug\sqlite3.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+CustomBuild:
+  Building Custom Rule C:/Users/User/Desktop/DevOps/CMakeLists.txt
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.20.27508\bin\HostX64\x64\CL.exe /c /IC:\Users\User\Desktop\DevOps\src /Zi /nologo /W3 /WX- /diagnostics:classic /Od /Ob0 /D _WINDLL /D _MBCS /D WIN32 /D _WINDOWS /D SQLITE_THREADSAFE=0 /D SQLITE_OS_WIN=1 /D "CMAKE_INTDIR=\"Debug\"" /D sqlite3_EXPORTS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"sqlite3.dir\Debug\\" /Fd"sqlite3.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue C:\Users\User\Desktop\DevOps\src\sqlite3.c
+  sqlite3.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.20.27508\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\User\Desktop\DevOps\build\Debug\sqlite3.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/Desktop/DevOps/build/Debug/sqlite3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/User/Desktop/DevOps/build/Debug/sqlite3.lib" /MACHINE:X64  /machine:x64 /DLL sqlite3.dir\Debug\sqlite3.obj
+  sqlite3.vcxproj -> C:\Users\User\Desktop\DevOps\build\Debug\sqlite3.dll
+FinalizeBuildStatus:
+  Файл "sqlite3.dir\Debug\sqlite3.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "sqlite3.dir\Debug\sqlite3.tlog\sqlite3.lastbuildstate".
+Сборка проекта "C:\Users\User\Desktop\DevOps\build\sqlite3.vcxproj" завершена (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "x64\Debug\ALL_BUILD\".
+  Создание каталога "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\".
+InitializeBuildStatus:
+  Создание "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+CustomBuild:
+  Building Custom Rule C:/Users/User/Desktop/DevOps/CMakeLists.txt
+FinalizeBuildStatus:
+  Файл "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+Сборка проекта "C:\Users\User\Desktop\DevOps\build\ALL_BUILD.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.16
+
